@@ -101,7 +101,7 @@ body * {
 
 .header-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 87px;
     align-items: center;
     padding-top: 8px;
@@ -110,10 +110,12 @@ body * {
 .header-navigation {
     list-style: none;
     display: flex;
+    padding: 0
 }
 
 .header-navigation__item {
-    margin-right: 60px;
+    margin-right: 47px;
+
 }
 
 .header-navigation__item a {
@@ -251,9 +253,9 @@ body * {
 .projects-navigation {
     list-style: none;
     display: flex;
-    justify-content: space-around;
-    padding-left: 675px;
-    padding-right: 100px;
+    justify-content: flex-end;
+    /* padding-left: 675px; */
+    /* padding-right: 100px; */
     padding-bottom: 40px;
 }
 
@@ -264,6 +266,8 @@ body * {
     font-size: 14px;
     line-height: 19px;
     text-transform: uppercase;
+    /* margin-left: 10px; */
+    margin-right: 52px;
 }
 
 .projects-navigation__item a {
@@ -1180,8 +1184,8 @@ hr {
 }
 
 .questions-container {
- display: flex;
- justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .questions {
@@ -1195,20 +1199,17 @@ hr {
 }
 
 .test41 {
-    /* background-color: #97eb88; */
     display: flex;
     justify-content: center;
     padding: 40px 0 50px 0;
 }
 
 .test42 {
-    /* padding-top: 40px; */
     display: flex;
     justify-content: center;
 }
 
 .test43 {
-    /* background-color: #96a361; */
     display: flex;
     justify-content: center;
     padding-top: 20px;
@@ -1223,7 +1224,6 @@ hr {
 }
 
 .map {
-
     position: relative;
     z-index: 1;
     display: flex;
@@ -1248,7 +1248,6 @@ hr {
 
 .mod56 {
     background-image: url(../images/insta.svg);
-
 }
 
 .mod57 {
@@ -1258,6 +1257,17 @@ hr {
     z-index: 1;
     width: 925px;
     height: 465px;
-
     margin-top: 40px;
+}
+
+@media (max-width: 1300px) {
+.header-content {
+    flex-wrap: wrap;
+}
+
+.types-of-repair-items {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 1280px;
+}
 }
